@@ -22,7 +22,7 @@ public class DuplicateElementsArrayList {
 			
 			if(a1.equals(a2)){
 				list.remove(a2);
-				System.out.println("duplicates values" +a2);
+				
 			}
 			
 		}

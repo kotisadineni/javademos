@@ -20,7 +20,6 @@ public class LargestNumber {
 				max=num;
 			}
 				
-			
 			 if(num<small){
 				 small=num;
 			 }

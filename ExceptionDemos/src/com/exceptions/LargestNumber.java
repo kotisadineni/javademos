@@ -6,22 +6,24 @@ public class LargestNumber {
 
 	public static void main(String[] args) {
 		
-		int small = Integer.MAX_VALUE;
+		int small = 0;
 		int max=0;
-		int num;
+		
 		System.out.println("Enter the number");
 		Scanner sc = new Scanner(System.in);
-		int n =sc.nextInt();
-		
-		for(int i=0;i<n;i++){
+		int num =sc.nextInt();
+		small=num; //Assume first entered value is small one
+		 //i starts 2nd one because we already we took one value
+		for(int i=2;i<num;i++){
 			num=sc.nextInt();
+			if (num>max){
+				max=num;
+			}
+				
 			
-			if (num>max)
-				num=max;
-			
-			 if(num<small)
-				 num=small;
-			 
+			 if(num<small){
+				 small=num;
+			 }
 			 System.out.println("Largest num is" +max);
 			 System.out.println("Smallest num is" +small);
 			}

@@ -6,7 +6,7 @@ public class LargestNumber {
 
 	public static void main(String[] args) {
 		
-		int small = 0;
+		int small = Integer.MAX_VALUE;
 		int max=0;
 		int num;
 		System.out.println("Enter the number");
